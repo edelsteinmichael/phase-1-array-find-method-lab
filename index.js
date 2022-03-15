@@ -7,13 +7,14 @@ const record = [
     //...
   ]
 
-//   const results = record.find(result => record.result === "W") 
-//   function superbowlWin(array) {
-//       if (results === true) {
-//           return record.year
-//       }
-//   }
-function superbowlWin(score) {
-    return score.result === "W"
+
+function superbowlWin(array) {
+   const foundItem = array.find(function(object) {
+        return  object.result === "W"
+   })
+    console.log(foundItem)
+    if(foundItem) {
+        return foundItem.year
+    }
 }
    
